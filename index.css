@@ -1,0 +1,22 @@
+h1, h2 {
+    text-align: center;
+}
+
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+    
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+p {
+    font-size: large;
+    line-height: 1.3;
+}

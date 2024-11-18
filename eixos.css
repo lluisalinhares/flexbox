@@ -1,0 +1,65 @@
+h1, h2 {
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: monospace;
+    font-weight: bolder;
+    color: blue;
+
+}
+
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteiner0 {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+div.item0 {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinera {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column;
+}
+
+div.itema {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinerb {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+div.itemb {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
