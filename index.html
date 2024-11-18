@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+            
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+        }
+
+        /* O básico da estilização com flexbox consiste em: 
+        1- Ter um div-pai que atue como um "conteiner" para seus respectivos divs-filhos;
+        2- Estilizar o div-conteiner com "display: flex";
+        3- Estilizar os divs-filhos com "flex: auto".
+        4- Resultado: O "display flex" do div-pai-conteiner vai retirar a estilização default do div --que alinha os divs em bloco um em cima do outro--, e vai colocar os itens um AO LADO do outro, em uma mesma linha;
+        já o "flex auto" do div-filho, vai dar a cada item um tamanho proporcional e flexível. Proporcional pois os itens se ajustam ao tamanho do TODO; e flexível pois podem aumentar em telas maiores e diminuir nas menores, respondendo ao tamanho da tela. */
+    </style>
+</head>
+<body>
+    <h1>Flexible Box - Aula 1</h1>
+    <br><br>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+    
+</body>
+</html>
