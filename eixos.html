@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 2</title>
+    <style>
+        h1, h2 {
+            text-align: center;
+        }
+
+        .subtitulo {
+            font-family: monospace;
+            font-weight: bolder;
+            color: blue;
+
+        }
+
+        div.conteiner {
+            background-color: lightsalmon;
+            display: flex;
+        }
+
+        div.item {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            padding: 7px;
+        }
+
+        div.conteiner0 {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        div.item0 {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            padding: 7px;
+        }
+
+        div.conteinera {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column;
+        }
+
+        div.itema {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            padding: 7px;
+        }
+
+        div.conteinerb {
+            background-color: lightsalmon;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        div.itemb {
+            background-color: lightskyblue;
+            border: 1px solid black;
+            flex: auto;
+            text-align: center;
+            padding: 7px;
+        }
+
+        /* Configurações do conteiner:
+
+        A propriedade "flex-direction" tem por default o valor "row",
+        e a direção é da esquerda para a direita; o resultado é que os itens ficam dispostos: em linha (row), da esquerda pra direita (default de flex-direction).
+        */
+    </style>
+</head>
+<body></body>
+    <h1>Flexible Box - Aula 2</h1>
+    <h2>Configurações do contêiner: eixos e direções</h2>
+    <h2 class="subtitulo">Flex-Direction</h2>
+
+    <p> De acordo com o MDN, "a propriedade CSS flex-direction define como os itens flexíveis são colocados no contêiner flexível; definindo 1- o eixo principal e 2- a direção". O eixo pode ser linha (row) ou colunas (column); e a direção pode ser normal ou invertido.
+        Por default, a propriedade tem eixo "row" e direção normal.
+    </p> 
+
+    <h3>Flex-direction: row<h3>   
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div><br><br>
+
+    <h3>flex-direction: row-reverse</h3>
+    <div class="conteiner0">
+        <div class="item0">A</div>
+        <div class="item0">B</div>
+        <div class="item0">C</div>
+        <div class="item0">D</div>
+        <div class="item0">E</div>
+        <div class="item0">F</div>
+        <div class="item0">G</div>
+    </div><br><br>
+    
+    <h3>flex-direction: column</h3>
+    <div class="conteinera">
+        <div class="itema">A</div>
+        <div class="itema">B</div>
+        <div class="itema">C</div>
+        <div class="itema">D</div>
+        <div class="itema">E</div>
+        <div class="itema">F</div>
+        <div class="itema">G</div>
+    </div> <br><br>
+
+    <h3>flex-direction: column-reverse</h3>
+    <div class="conteinerb">
+        <div class="itemb">A</div>
+        <div class="itemb">B</div>
+        <div class="itemb">C</div>
+        <div class="itemb">D</div>
+        <div class="itemb">E</div>
+        <div class="itemb">F</div>
+        <div class="itemb">G</div>
+    </div>
+</body>
+</html>
