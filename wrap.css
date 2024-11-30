@@ -1,0 +1,113 @@
+h1, h2 {
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: monospace;
+    font-weight: bolder;
+    color: blue;
+}
+
+p {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: large;
+}
+
+div.conteiner {
+    background-color: lightsalmon;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap; /*wrap*/
+    width: 110px;
+}
+
+div.item {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteiner0 {
+    background-color: lightsalmon;
+    display: flex;
+    padding: 10px;
+    flex-wrap: nowrap; /*nowrap*/
+    width: 110px;
+}
+
+div.item0 {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinera {
+    background-color: lightsalmon;
+    display: flex;
+    padding: 10px;
+    flex-wrap: wrap-reverse; /*wrap-reverse*/
+    width: 110px;
+}
+
+div.itema {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinerb {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column; /* flex-direction*/ 
+    padding: 10px;
+    flex-wrap: nowrap; /* flex-wrap*/ 
+    width: 110px;
+}
+
+div.itemb {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinerc {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: column-reverse; /* flex-direction*/ 
+    padding: 10px;
+    flex-wrap: wrap-reverse; /* flex-wrap*/ 
+    width: 110px;
+}
+
+div.itemc {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
+
+div.conteinerd {
+    background-color: lightsalmon;
+    display: flex;
+    flex-direction: row-reverse; /* flex-direction*/ 
+    padding: 10px;
+    flex-wrap: wrap-reverse; /* flex-wrap*/ 
+    width: 3000px;
+}
+
+div.itemd {
+    background-color: lightskyblue;
+    border: 1px solid black;
+    flex: auto;
+    text-align: center;
+    padding: 7px;
+}
