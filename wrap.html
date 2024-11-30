@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box 3</title>
+    <link rel="stylesheet" href="wrap.css">
+</head>
+
+<body></body>
+    <h1>Flexible Box - Aula 3</h1>
+    <h2>Configurações do contêiner: empacotamento e fluxo</h2><hr>
+    <h2 class="subtitulo">Flex-Wrap</h2>
+
+    <p>
+        É uma propriedade que aplica-se a flex contêiners. De acordo com o <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS/flex-wrap" target="_blank">MDN</a> "a propriedade CSS <b>flex-wrap</b> define se os itens flexíveis são forçados a ficarem na mesma linha ou se podem ser quebradas em várias linhas. Se o argumento for válido, ele define a direção na qual as linhas são empilhadas.", de acordo com o que foi definido em <a href="eixos.html" target="_blank">flex-direction</a>. São 3 valores possíveis para flex-wrap: <b>nowrap</b>, <b>wrap</b>, <b>reverse</b>. 
+    </p> 
+
+    <hr>
+    <h2 class="subtitulo">Exemplos:</h2>
+
+    <h3>flex-wrap: nowrap</h3>
+    <p>
+        Os itens flexíveis são agrupados em uma única linha, o que pode fazer com que o flex container <b>transborde</b>. O cross-start é equivalente ao início ou antes, dependendo do valor da flex-direction. Este é o valor <u>default.</u>
+    </p>
+    <div class="conteiner0">
+        <div class="item0">A</div>
+        <div class="item0">B</div>
+        <div class="item0">C</div>
+        <div class="item0">D</div>
+        <div class="item0">E</div>
+        <div class="item0">F</div>
+        <div class="item0">G</div>
+    </div><br><br>
+
+    <h3>flex-wrap: wrap</h3>
+    <p>
+        Quando o valor de flex-wrap é <b>wrap</b>, os itens flexíveis são quebrados em <b>múltiplas linhas</b>. A quebra de linha acontece no sentido do <u>cross-axis</u> (eixo transversal). Este é composto por cross-star e cross-end.  <u>O cross-start</u> é equivalente ao início ou antes dependendo do valor do <u>flex-direction</u> e cross-end é o oposto do especificado cross-start.
+    </p>  
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+
+    
+    <h3>flex-wrap: wrap-reverse</h3>
+    <p>
+        Se comporta da mesma forma que o wrap, mas a quebra de linha ocorre na <b>direção contrária</b>, ou seja, quebra a linha no sentido oposto ao eixo-transversal.
+    </p>
+    <div class="conteinera">
+        <div class="itema">A</div>
+        <div class="itema">B</div>
+        <div class="itema">C</div>
+        <div class="itema">D</div>
+        <div class="itema">E</div>
+        <div class="itema">F</div>
+        <div class="itema">G</div>
+    </div> <br><br>
+
+    <p>
+        Aqui findam os exemplos dos três valores possíveis para a propriedade flex-wrap. Abaixo, exemplos de flex-wrap quando <u>flex-direction</u> assume outros valores além do default (row).  
+    </p><hr>
+
+    <h2 class="subtitulo">Usos de flex-wrap com outros valores de <u>flex-direction</u></h2>
+
+
+    <h3>flex-direction: row</h3>
+    <h3>flex-wrap: nowrap</h3>    
+    <div class="conteinerd">
+        <div class="itemd">A</div>
+        <div class="itemd">B</div>
+        <div class="itemd">C</div>
+        <div class="itemd">D</div>
+        <div class="itemd">E</div>
+        <div class="itemd">F</div>
+        <div class="itemd">G</div>
+    </div><br>
+
+    <h3>flex-direction: column</h3>
+    <h3>flex-wrap: wrap</h3>
+    <div class="conteinerb">
+        <div class="itemb">A</div>
+        <div class="itemb">B</div>
+        <div class="itemb">C</div>
+        <div class="itemb">D</div>
+        <div class="itemb">E</div>
+        <div class="itemb">F</div>
+        <div class="itemb">G</div>
+    </div><br>
+
+    <h3>flex-direction: column-reverse</h3>
+    <h3>flex-wrap: wrap</h3>
+    <div class="conteinerc">
+        <div class="itemc">A</div>
+        <div class="itemc">B</div>
+        <div class="itemc">C</div>
+        <div class="itemc">D</div>
+        <div class="itemc">E</div>
+        <div class="itemc">F</div>
+        <div class="itemc">G</div>
+    </div>
+
+    <br>
+    <p>
+        E existem outras combinações possíveis entre as duas propriedades, mas a ideia central foi passada com estes exemplos.
+    </p>
+    <br><hr>
+
+    <p>No entanto, o que é mais utilizado é a abreviação, ou, "shorthand", <b>flex-flow</b>, que é o shorthand para flex-direction e flex-wrap.</p>
+
+</body>
+</html>
